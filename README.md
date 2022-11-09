@@ -9,7 +9,7 @@ This monorepo contains two apps, naming `main-app` and `sub-app`, with `libs` bu
 
 ### **For Development:**
 
-Only run `npm run start` is enough. NX will serve `main-app` in `localhost:4001` and `sub-aoo` in `localhost:4002`.
+Only run `npm run start` is enough. NX will serve `main-app` in `localhost:4001` and `sub-app` in `localhost:4002`.
 
 ### **For Deployment:**
 
@@ -19,3 +19,9 @@ you will need to update `contentIframe` link in `apps/main-app/src/environments/
 which would be the deployed link of sub-app.
 
 <br />
+
+For example:
+<br/>
+`sub-app` is deployed to https://uniify-frontend-test-sub.vercel.app/ <br/>
+`main-app` is deployed to https://uniify-frontend-test.vercel.app/ -> when you access to `main-app`,
+you can see 1 iframe embedded with link to deployed `sub-app` above.
